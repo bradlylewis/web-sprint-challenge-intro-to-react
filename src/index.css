@@ -4,9 +4,18 @@
   padding:0;
   margin:0;
 }
+html {
+  font-size:62.5%; /*default browser font-size is 16px, this makes it so that 1rem === 10px (easier math) it also gives the user control over bumping up or down the font size because % is a scalable unit of measurement*/
+}
 body {
   height: 100vh;
-  font-family: sans-serif;
+  font-size:1.8rem; /*setting the font size back to 18px*/
+  line-height:1.5; /*no unit of measurement, it take the font size and multiplies it by this number to add space between lines*/
+  /* color:#4F4F4F; */
+  font-family: 'Source Sans Pro', sans-serif;
   background-image: url('./images/sw-bg.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
   border: 4px solid black;
 }
