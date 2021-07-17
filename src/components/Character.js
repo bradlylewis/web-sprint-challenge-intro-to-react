@@ -12,6 +12,8 @@ margin: 0 10%;
 background-color: Transparent;
 background-repeat:no-repeat;
 cursor:pointer;
+height: 6em;
+
 &:hover{
     transform: scale(1.02);
 }
@@ -23,7 +25,7 @@ h1{
 div{
     background-color: #88d2d5;
     padding: 1%;
-    border: 3px solid gold;
+    border: 3px dotted gold;
     border-radius: 2%;
 }
 h3{
@@ -36,7 +38,7 @@ export default function Character(props){
     const {data} = props
 
     return data.map(item => (
-    <StyledContainer onClick="hellow there">
+    <StyledContainer>
         <h1>{item.name}</h1>
         <div><h3>{item.birth_year}</h3></div>
     </StyledContainer>)
