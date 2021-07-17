@@ -1,24 +1,11 @@
 // Write your Character component here
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+// import styled from 'styled-components'
 
-const StyledCharacter = styled.div`
-    background-color: #debd9288;
-    padding: 0.25em 2em;
-    margin: 2em auto;
-    width: 90%;
-    text-align: left;
-    border: 2px solid #e4a654;
-`;
+// const StyledContainer = styled.
 
-const Character = (props) => {
-    const {character} = props;
+export default function Character(props){
+    const {data} = props
 
-    return (
-        <StyledCharacter>
-            <h1>{character.name}</h1>
-        </StyledCharacter>
-    )
-};
-
-export default Character;
+    return data.map(item => <div><h2>{item.name}</h2><p>{item.birth_year}</p></div>)
+}

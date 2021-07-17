@@ -15,7 +15,7 @@ const App = () => {
     axios.get("https://swapi.dev/api/people")
     .then((response) => {
       setCharacters(response.data)
-      console.log(response.data)
+      // console.log(response.data)
     })
     .catch(errors => console.log(errors))
   },[]);
@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <Character data={characters} />
     </div>
   );
 }

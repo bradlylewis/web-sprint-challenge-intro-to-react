@@ -1,7 +1,12 @@
+*{
+  box-sizing: border-box; /*respect the width of the box, apply padding or border within the width it's been given not in addition to it*/
+  max-width:100%; /*Makes it so that elements can never be bigger than their parents, stops the horizontal scroll bar*/
+  padding:0;
+  margin:0;
+}
 body {
-  margin: 0;
-  padding: 0;
+  height: 100vh;
   font-family: sans-serif;
   background-image: url('./images/sw-bg.jpg');
-  background-size: cover;
+  border: 4px solid black;
 }
